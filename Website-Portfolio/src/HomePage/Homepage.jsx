@@ -9,7 +9,7 @@ function Homepage() {
         <h3>Portfolio</h3>
         <h1>Sebastian Maligaya</h1>
         <div className="cta">
-          <button className="btn btn-primary">Contact Me</button>
+          <button className="btn btn-ghost">Contact Me</button>
           <button className="btn btn-ghost">CV</button>
         </div>
       </div>

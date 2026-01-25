@@ -4,20 +4,17 @@
 	--page-text: #ffffff;
 }
 
-html,body,#root{
-	height: 100%;
-}
+
 
 body{
 	margin: 0;
 	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 	color: var(--page-text);
-	background: linear-gradient(180deg, var(--bg-start) 60%, var(--bg-end) 100%);
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	position: relative;
+	background: linear-gradient(180deg, var(--bg-start) 50%, var(--bg-end) 90%);
+
 }
 
+/*
 body::before{
 	content: "";
 	position: fixed;
@@ -33,6 +30,7 @@ body::before{
 	z-index: -1;
 	pointer-events: none;
 }
+*/
 
 
 
