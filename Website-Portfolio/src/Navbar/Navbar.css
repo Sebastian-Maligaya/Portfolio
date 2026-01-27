@@ -11,21 +11,17 @@
     padding-left: 10rem;
     padding-right: 10rem;
 	margin: 0;
-    background: rgb(17, 31, 37);
-	box-sizing: border-box;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    background: #112D4E;
+	color: rgb(255, 255, 255);
+	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
 
 }
 
-
-
-.logo{
-	font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+.logo {
 	font-weight: 700;
-	color: var(--text);
-	text-decoration: none;
 	letter-spacing: 0.2px;
-	font-size: 1.05rem;
+	font-size: 32px;
+	color: rgb(255, 255, 255);
 }
 
 .nav-links{
@@ -38,25 +34,18 @@
 }
 
 .nav-links a{
-	color: var(--muted);
-	text-decoration: none;
-	font-weight: 500;
 	padding: 0.25rem 0.35rem;
-	transition: color 150ms ease, box-shadow 150ms ease;
+}
+
+.nav-links a,
+.logo {
+  color: white;
+  text-decoration: none;
 }
 
 .nav-links a:hover,
-.nav-links a:focus{
-	color: var(--text);
-	outline: none;
-	box-shadow: inset 0 -2px 0 0 var(--text);
+.logo:hover {
+  color: #DBE2EF; /* or any highlight color you want */
+
 }
 
-@media (max-width: 640px){
-	.navbar{
-		padding: 0.75rem 1rem;
-	}
-	.nav-links{
-		gap: 0.75rem;
-	}
-}

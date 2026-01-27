@@ -1,16 +1,19 @@
 import './Homepage.css'
 
-import MeImg from '../assets/Me.png'
+import MeImg from '../assets/CropMe.png'
 
 function Homepage() {
   return (
     <div className="homepage">
       <div className="Left">
-        <h3>Portfolio</h3>
+        <div className='name'>
+        <h3>PORTFOLIO</h3>
         <h1>Sebastian Maligaya</h1>
-        <div className="cta">
-          <button className="btn btn-ghost">Contact Me</button>
-          <button className="btn btn-ghost">CV</button>
+        </div>
+
+        <div className="button">
+          <button className="btn">Contact Me</button>
+          <button className="btn">CV</button>
         </div>
       </div>
       <div className="Right">
