@@ -23,3 +23,75 @@
     flex: 1;
     align-items: center;
 }
+
+.Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.Skills h1{
+    font-size: 96px;
+    color: #112D4E;
+    margin: 1rem;
+}
+
+.Skills p{
+    font-size: 32px;
+    color: #112D4E;
+    margin: 0;
+}
+
+
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 5rem;
+}
+
+/* Ensure Swiper slides center their content */
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-logo {
+    flex: 0;
+    width: auto;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Item-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    filter: grayscale(20%);
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.Item-logo img:hover {
+    transform: scale(1.08);
+    filter: grayscale(0%);
+}
+
+/* Responsive sizes */
+@media (max-width: 1024px) {
+    .Item-logo { width: 120px; height: 120px; }
+}
+
+@media (max-width: 640px) {
+    .carousel { width: 95%; }
+    .Item-logo { width: 90px; height: 90px; }
+}
+
+
+
+    
