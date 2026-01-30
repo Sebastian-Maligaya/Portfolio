@@ -1,5 +1,209 @@
+/* ===== Projects Library Section ===== */
 .projects-section {
-    padding: 50px;
+    padding: 80px 60px 100px;
     background-color: #DBE2EF;
     text-align: center;
+}
+
+.projects-title {
+    color: #0F2B45;
+    font-size: 56px;
+    font-weight: 800;
+    margin: 0 0 12px 0;
+}
+
+.projects-subtitle {
+    color: #4b5868;
+    font-size: 18px;
+    margin: 0 0 50px 0;
+}
+
+/* ===== Carousel Container ===== */
+.carousel-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== Project Card ===== */
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(16, 24, 40, 0.08);
+    overflow: hidden;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    height: 100%;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(16, 24, 40, 0.14);
+}
+
+/* ===== Image Placeholder ===== */
+.project-image {
+    height: 180px;
+    background: linear-gradient(135deg, #112D4E 0%, #3F72AF 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.placeholder-text {
+    text-transform: uppercase;
+}
+
+/* ===== Card Info ===== */
+.project-info {
+    padding: 24px;
+}
+
+.project-info h3 {
+    margin: 0 0 10px 0;
+    color: #0F2B45;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.project-info p {
+    margin: 0 0 16px 0;
+    color: #4b5868;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ===== Tech Tags ===== */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    background: #e8eef5;
+    color: #3F72AF;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* ===== Links ===== */
+.project-links {
+    display: flex;
+    gap: 12px;
+}
+
+.link-btn {
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.link-btn:not(.primary) {
+    background: #e8eef5;
+    color: #0F2B45;
+}
+
+.link-btn:not(.primary):hover {
+    background: #dce4ed;
+}
+
+.link-btn.primary {
+    background: #112D4E;
+    color: #ffffff;
+}
+
+.link-btn.primary:hover {
+    background: #1a3f66;
+}
+
+/* ===== Swiper Overrides ===== */
+.projects-swiper {
+    padding-bottom: 50px;
+    overflow: visible;
+    width: 100%;
+}
+
+.projects-swiper .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.projects-swiper .swiper-slide {
+    height: auto;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+    transform: scale(0.85);
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-swiper .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 2;
+}
+
+.projects-swiper .swiper-slide-active .project-card {
+    box-shadow: 0 16px 48px rgba(16, 24, 40, 0.2);
+}
+
+.projects-swiper .swiper-button-prev,
+.projects-swiper .swiper-button-next {
+    color: #0F2B45;
+    background: rgba(255,255,255,0.9);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.projects-swiper .swiper-button-prev::after,
+.projects-swiper .swiper-button-next::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.projects-swiper .swiper-pagination-bullet {
+    background: #0F2B45;
+    opacity: 0.3;
+    width: 10px;
+    height: 10px;
+}
+
+.projects-swiper .swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #0F2B45;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+    .projects-section {
+        padding: 60px 24px 80px;
+    }
+    .projects-title {
+        font-size: 36px;
+    }
+    .projects-subtitle {
+        font-size: 16px;
+    }
+    .carousel-container {
+        padding: 0 20px;
+    }
+    .projects-swiper .swiper-button-prev,
+    .projects-swiper .swiper-button-next {
+        display: none;
+    }
 }

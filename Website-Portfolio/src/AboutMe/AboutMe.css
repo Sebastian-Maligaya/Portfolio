@@ -5,7 +5,8 @@
 
 .AboutMeLeft{
     flex: 1;
-    padding: 5rem;
+    padding-top: 5rem;
+    padding-left: 10rem;
     max-width: 800px;
 
 }

@@ -1,6 +1,7 @@
 
 
 .homepage{
+	padding-top: 8rem;
 	background-color: #112D4E;
 	display: flex;
 	gap: 2rem;
@@ -10,18 +11,26 @@
     url("../assets/Bg1.png");
 	background-size: cover;
 	height: 850px;
+	
 
 }
 
 .Left h3{
 	padding-top: 0rem;
 	margin: 0;
+	
+	  
+}
+
+.Left h1{
+	position: relative;
 }
 
 .Left{
 	padding-top: 10rem;
 	flex: 1rem;
 	max-width: 800px;
+	
 	/*ackground-color: antiquewhite;*/
 
 }
@@ -54,6 +63,22 @@
 	font-size: 48px;
 	margin: 0;
 	font-weight: normal;
+
+}
+
+.name h3:empty::after{
+  content: "\00a0"; /* keep element from collapsing when empty */
+}
+
+.name h3::after{
+	content: "|";
+	animation: blink 1s infinite;
+	margin-left: 5px;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
 
 button.btn{

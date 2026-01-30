@@ -1,11 +1,13 @@
 import "./Project.css";
 
+
+
 function Projects() {
     return (
-        <div id="projects-section" className="projects-section">
-            <h2>Projects</h2>
-            <p>Here are some of my projects.</p>
-        </div>  
-    )};
+        <section id="projects-section" className="projects-section">
+            <h1 className="section-title">Projects</h1>
+        </section>
+    );
+}
 
 export default Projects;
