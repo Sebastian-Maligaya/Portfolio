@@ -47,24 +47,20 @@
 
 
 
-.carousel {
+.logos-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 80%;
-    padding: 5rem;
-}
-
-/* Ensure Swiper slides center their content */
-.swiper-slide {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 5rem;
+    width: 80%;
+    padding: 10rem;
+    padding-top: 5rem
 }
 
 .Item-logo {
-    flex: 0;
-    width: auto;
-    height: 140px;
+    width: 200px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;

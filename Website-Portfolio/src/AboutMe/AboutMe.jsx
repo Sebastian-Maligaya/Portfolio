@@ -1,8 +1,5 @@
 import './AboutMe.css';
 import AboutMeImg from '../assets/AboutMe.png'
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, FreeMode } from "swiper/modules";
-import "swiper/css";
 
 function AboutMe() {
 
@@ -35,29 +32,12 @@ function AboutMe() {
                 <h1>Skills</h1>
                 <p>Programming Languages</p>
 
-                <div className="carousel">
-                    <Swiper
-                        modules={[Autoplay, FreeMode]}
-                        spaceBetween={1}
-                        slidesPerView={5}
-                        loop={true}
-                        grabCursor={true}
-                        autoplay={{
-                            delay: 1000,
-                            disableOnInteraction: false,
-                        }}
-                       
-                    >
-
-                        {logos.map((logo, index) => (
-                            <SwiperSlide key={index}>
-                                <div className="Item-logo">
-                                    <img src={logo.src} alt={logo.name} />
-                                </div>
-                            </SwiperSlide>
-                        ))}
-
-                    </Swiper>
+                <div className="logos-container">
+                    {logos.map((logo, index) => (
+                        <div className="Item-logo" key={index}>
+                            <img src={logo.src} alt={logo.name} />
+                        </div>
+                    ))}
                 </div>
 
             </div>
