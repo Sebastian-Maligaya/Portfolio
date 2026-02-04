@@ -28,6 +28,7 @@ function AboutMe() {
                     <img src={AboutMeImg} alt="AboutMe" className="image" />
                 </div>
             </div>
+            {/*
             <div className='Skills'>
                 <h1>Skills</h1>
                 <p>Programming Languages</p>
@@ -41,6 +42,7 @@ function AboutMe() {
                 </div>
 
             </div>
+            */}
         </div>
     );
 }

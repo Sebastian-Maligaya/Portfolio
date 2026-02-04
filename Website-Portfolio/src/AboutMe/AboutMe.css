@@ -53,13 +53,13 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
-    width: 80%;
+    width: 800px;
     padding: 10rem;
     padding-top: 5rem
 }
 
 .Item-logo {
-    width: 200px;
+    width: 100px;
     height: auto;
     display: flex;
     align-items: center;
