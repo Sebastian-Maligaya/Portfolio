@@ -1,0 +1,81 @@
+.Contact-Section {
+    min-height: 80vh;
+    padding-top: 10vh;
+}
+
+.Contact-Section h1 {
+    text-align: center;
+    font-size: 98px;
+    margin: 50px 0 20px;
+    color: #112D4E;
+}
+
+.Contact-Form {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.Contact-Form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+}
+
+
+
+.Contact-1 {
+    display: flex;
+    justify-content: space-between;
+
+
+
+}
+
+.Contact-Left,
+.Contact-Right,
+.Contact-2 {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Contact-Form label {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 6px;
+    color: #112D4E;
+}
+
+.Contact-Form input,
+.Contact-Form textarea {
+    padding: 12px 14px;
+    border-radius: 15px;
+    font-size: 18px;
+    background-color: #DBE2EF;
+    color: #112D4E;
+}
+
+#message {
+    min-height: 180px;
+    resize: vertical;
+}
+
+#name,#email {
+    width: 400px;
+}
+
+textarea::placeholder, input::placeholder {
+  color: #283c53;
+}
+
+.Contact-Form button {
+    font-size: 22px;
+    margin: 1rem auto 0;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
